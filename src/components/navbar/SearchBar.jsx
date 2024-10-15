@@ -8,7 +8,7 @@ export default function SearchBar({ id }) {
         id={id}
         type="text"
         placeholder="Search something..."
-        className="px-4 py-2    sm:w-64 md:w-40  lg:w-72 outline-none h-full text-inherit bg-[#f4f6f8]  text-gray-700 border rounded-l-md "
+        className="px-4 py-2 w-56 sm:w-64 md:w-40  lg:w-72 outline-none h-full text-inherit bg-[#f4f6f8]  text-gray-700 border rounded-l-md "
       />
 
       <CustomDropdown />
