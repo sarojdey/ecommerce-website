@@ -13,6 +13,10 @@ export default function NavMenu({
   isSearchOpen,
   isDropDownOpen,
   setIsDropDownOpen,
+  selectedOption,
+  setSelectedOption,
+  searchQuery,
+  setSearchQuery,
 }) {
   const loggedIn = true;
   return (
@@ -35,12 +39,18 @@ export default function NavMenu({
           isDropDownOpen={isDropDownOpen}
           setIsDropDownOpen={setIsDropDownOpen}
           setIsSearchOpen={setIsSearchOpen}
+          selectedOption={selectedOption}
+          setSelectedOption={setSelectedOption}
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
           id={"mobile-search"}
         />
         <div
           onClick={() => {
             setIsSearchOpen(false);
             setIsDropDownOpen(false);
+            setSelectedOption("All Categories");
+            setSearchQuery("");
           }}
           className="flex justify-center items-center cursor-pointer"
         >

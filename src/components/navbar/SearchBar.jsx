@@ -1,4 +1,3 @@
-import { useState } from "react";
 import CustomDropdown from "./CustomDropdown";
 import { FiSearch } from "react-icons/fi";
 
@@ -7,9 +6,11 @@ export default function SearchBar({
   setIsSearchOpen,
   isDropDownOpen,
   setIsDropDownOpen,
+  selectedOption,
+  setSelectedOption,
+  searchQuery,
+  setSearchQuery,
 }) {
-  const [searchQuery, setSearchQuery] = useState("");
-
   return (
     <div className="ml-6 flex h-10 items-center text-sm shadow-sm">
       <input
@@ -26,12 +27,16 @@ export default function SearchBar({
       <CustomDropdown
         isDropDownOpen={isDropDownOpen}
         setIsDropDownOpen={setIsDropDownOpen}
+        selectedOption={selectedOption}
+        setSelectedOption={setSelectedOption}
       />
       <button
         onClick={() => {
           setIsSearchOpen(false);
           setSearchQuery("");
           setIsDropDownOpen(false);
+          setSelectedOption("All Categories");
+          setSearchQuery("");
         }}
         className="bg-black h-full rounded-r-md text-white px-4 py-2"
       >

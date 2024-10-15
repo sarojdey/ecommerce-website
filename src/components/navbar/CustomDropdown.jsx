@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   BiExpandVertical,
   BiCollapseVertical,
@@ -8,9 +7,12 @@ import {
 import { FaKeyboard } from "react-icons/fa";
 import { FaMouse } from "react-icons/fa";
 
-export default function CustomDropdown({ isDropDownOpen, setIsDropDownOpen }) {
-  const [selectedOption, setSelectedOption] = useState("All Categories");
-
+export default function CustomDropdown({
+  isDropDownOpen,
+  setIsDropDownOpen,
+  selectedOption,
+  setSelectedOption,
+}) {
   const options = [
     "All Categories",
     "Laptop",
