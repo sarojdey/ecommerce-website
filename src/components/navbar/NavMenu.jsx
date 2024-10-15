@@ -1,10 +1,4 @@
-import {
-  FiShoppingCart,
-  FiHeart,
-  FiUser,
-  FiSearch,
-  FiMenu,
-} from "react-icons/fi";
+import { FiShoppingCart, FiHeart, FiUser, FiSearch } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
 import SearchBar from "./SearchBar";
 
@@ -58,7 +52,7 @@ export default function NavMenu({
         </div>
       </div>
 
-      <div className="relative cursor-pointer hidden sm:inline-block ">
+      <div className="relative cursor-pointer  ">
         <FiShoppingCart className="text-2xl text-gray-700" />
         <span
           style={{ fontSize: "9px" }}
@@ -67,7 +61,7 @@ export default function NavMenu({
           21
         </span>
       </div>
-      <div className="relative cursor-pointer hidden sm:inline-block">
+      <div className="relative cursor-pointer ">
         <FiHeart className="text-2xl text-gray-700" />
         <span
           style={{ fontSize: "9px" }}
@@ -93,7 +87,7 @@ export default function NavMenu({
         )}
       </div>
       <div className="cursor-pointer sm:hidden" onClick={() => {}}>
-        <FiMenu className="text-2xl text-gray-700" />
+        <FiUser className="text-2xl text-gray-700" />
       </div>
     </div>
   );
