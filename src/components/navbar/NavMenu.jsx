@@ -7,18 +7,20 @@ import {
 } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
 import SearchBar from "./SearchBar";
-import { useState } from "react";
 
-export default function NavMenu() {
-  const [isOpen, setIsOpen] = useState(false);
-
+export default function NavMenu({
+  setIsSearchOpen,
+  isSearchOpen,
+  isDropDownOpen,
+  setIsDropDownOpen,
+}) {
   const loggedIn = true;
   return (
     <div className="flex items-center space-x-6">
       <div
         className="cursor-pointer md:hidden"
         onClick={() => {
-          setIsOpen(true);
+          setIsSearchOpen(true);
         }}
       >
         <FiSearch className="text-2xl text-gray-700" />
@@ -26,13 +28,19 @@ export default function NavMenu() {
 
       <div
         className={`absolute flex  right-5 sm:right-36 md:hidden gap-4 -bottom-14 transform transition-transform duration-500 ease-out ${
-          isOpen ? "translate-x-[0%]" : "translate-x-[200%]"
+          isSearchOpen ? "translate-x-[0%]" : "translate-x-[200%]"
         }`}
       >
-        <SearchBar id={"mobile-search"} />
+        <SearchBar
+          isDropDownOpen={isDropDownOpen}
+          setIsDropDownOpen={setIsDropDownOpen}
+          setIsSearchOpen={setIsSearchOpen}
+          id={"mobile-search"}
+        />
         <div
           onClick={() => {
-            setIsOpen(false);
+            setIsSearchOpen(false);
+            setIsDropDownOpen(false);
           }}
           className="flex justify-center items-center cursor-pointer"
         >

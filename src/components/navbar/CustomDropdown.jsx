@@ -1,8 +1,14 @@
 import { useState } from "react";
-import { BiExpandVertical, BiCollapseVertical } from "react-icons/bi";
+import {
+  BiExpandVertical,
+  BiCollapseVertical,
+  BiLaptop,
+  BiHeadphone,
+} from "react-icons/bi";
+import { FaKeyboard } from "react-icons/fa";
+import { FaMouse } from "react-icons/fa";
 
-export default function CustomDropdown() {
-  const [isOpen, setIsOpen] = useState(false);
+export default function CustomDropdown({ isDropDownOpen, setIsDropDownOpen }) {
   const [selectedOption, setSelectedOption] = useState("All Categories");
 
   const options = [
@@ -14,12 +20,27 @@ export default function CustomDropdown() {
   ];
 
   const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+    setIsDropDownOpen(!isDropDownOpen);
   };
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
-    setIsOpen(false);
+    setIsDropDownOpen(false);
+  };
+
+  const getSelectedIcon = (option) => {
+    switch (option) {
+      case "Laptop":
+        return <BiLaptop className="text-gray-400" />;
+      case "Headphone":
+        return <BiHeadphone className="text-gray-400" />;
+      case "Keyboard":
+        return <FaKeyboard className="text-gray-400" />;
+      case "Mouse":
+        return <FaMouse className="text-gray-400" />;
+      default:
+        return <BiExpandVertical className="text-gray-400" />;
+    }
   };
 
   return (
@@ -32,14 +53,14 @@ export default function CustomDropdown() {
         className="flex items-center gap-2 text-nowrap justify-between h-full w-full px-3 py-2 border border-x-0 bg-inherit cursor-pointer"
       >
         <span className="text-gray-400 hidden sm:block">{selectedOption}</span>
-        {isOpen ? (
+        {isDropDownOpen ? (
           <BiCollapseVertical className="text-gray-400 " />
         ) : (
-          <BiExpandVertical className="text-gray-400 " />
+          getSelectedIcon(selectedOption)
         )}
       </div>
 
-      {isOpen && (
+      {isDropDownOpen && (
         <div className="absolute mt-2 w-40 right-0 overflow-hidden bg-white border border-gray-300 rounded-md shadow-lg z-10">
           <ul>
             {options.map((option, index) => (
