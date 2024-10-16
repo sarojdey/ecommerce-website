@@ -29,7 +29,7 @@ export default function StoreFeatures() {
     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 px-8 sm:px-16 md:px-3 py-3 shadow-sm">
       {features.map((feature, index) => (
         <div key={index} className="flex justify-center">
-          <div className="flex  items-center space-x-3 w-32 sm:w-auto">
+          <div className="flex  items-center space-x-3 w-32 sm:w-44 md:w-auto">
             <span className="text-xl sm:text-4xl text-[#ff4654]">
               {feature.icon}
             </span>
