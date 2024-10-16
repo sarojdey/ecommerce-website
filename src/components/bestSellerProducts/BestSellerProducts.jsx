@@ -15,7 +15,7 @@ export default function BestSellerProducts() {
         {data.map((item) => (
           <div
             key={item.id}
-            className="border bg-white rounded-md p-3 sm:p-4 shadow-sm sm:w-48 md:w-44 lg:w-56"
+            className="border bg-white rounded-md p-3 sm:p-4 shadow-sm sm:w-48 md:w-44 lg:w-56 mb-5"
           >
             <div className=" flex justify-center items-center">
               <div>
@@ -27,14 +27,17 @@ export default function BestSellerProducts() {
               </div>
             </div>
 
-            <div className="mt-4  flex flex-col justify-between h-52 ">
+            <div className="mt-4  flex flex-col justify-between  ">
               <div>
                 <p className="text-gray-500 text-xs">{item.category}</p>
-                <h3 className="text-sm font-semibold mt-2">{item.product}</h3>
+                <h3 className="text-sm font-semibold mt-1 whitespace-nowrap overflow-hidden text-ellipsis">
+                  {item.product}
+                </h3>
+
                 <p className="text-sm font-bold text-green-600 mt-1">
                   <span>₹</span> {item.price}
                 </p>
-                <div className="flex items-center mt-4">
+                <div className="flex items-center mt-2">
                   {[...Array(Math.round(item.rating))].map((_, i) => (
                     <FaStar key={i} className="text-amber-500 text-lg mr-1" />
                   ))}
