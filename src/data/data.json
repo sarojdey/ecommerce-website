@@ -34,7 +34,7 @@
     "price": 499,
     "category": "Headphone",
     "url": "/headphone2.jpg",
-    "rating": 4.9,
+    "rating": 2.9,
     "reviews": [
       {
         "username": "Amanda Scott",
@@ -61,7 +61,7 @@
     "price": 399,
     "category": "Headphone",
     "url": "/headphone3.jpg",
-    "rating": 4.8,
+    "rating": 1.8,
     "reviews": [
       {
         "username": "Daniel Clark",
@@ -88,7 +88,7 @@
     "price": 499,
     "category": "Headphone",
     "url": "/headphone4.jpg",
-    "rating": 4.6,
+    "rating": 3.6,
     "reviews": [
       {
         "username": "William Turner",
