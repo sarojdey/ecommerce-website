@@ -30,7 +30,7 @@ export default function StoreFeatures() {
       {features.map((feature, index) => (
         <div
           key={index}
-          className="flex items-center md:justify-center space-x-3"
+          className="flex items-center justify-center w-30 sm:w-auto space-x-3"
         >
           <span className="text-xl sm:text-4xl text-[#ff4654]">
             {feature.icon}
