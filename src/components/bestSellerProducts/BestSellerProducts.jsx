@@ -51,7 +51,7 @@ export default function BestSellerProducts() {
         {products.map((product) => (
           <div
             key={product.id}
-            className="border bg-white rounded-md p-2 sm:p-4 shadow-sm sm:w-48 md:w-44 lg:w-56"
+            className="border bg-white rounded-md p-3 sm:p-4 shadow-sm sm:w-48 md:w-44 lg:w-56"
           >
             <div className=" flex justify-center items-center">
               <div>
