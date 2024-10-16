@@ -26,7 +26,7 @@ export default function StoreFeatures() {
   ];
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 px-5 sm:px-10 md:px-3 py-3 shadow-sm">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pl-5 sm:pl-8 md:px-3 py-3 shadow-sm">
       {features.map((feature, index) => (
         <div key={index} className="flex justify-center">
           <div className="flex  items-center space-x-3 w-44  md:w-auto">
