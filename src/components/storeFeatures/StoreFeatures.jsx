@@ -26,7 +26,7 @@ export default function StoreFeatures() {
   ];
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 px-6 sm:px-16 md:px-3 py-3 shadow-sm">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 px-8 sm:px-16 md:px-3 py-3 shadow-sm">
       {features.map((feature, index) => (
         <div
           key={index}
