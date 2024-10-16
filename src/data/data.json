@@ -1,0 +1,407 @@
+[
+  {
+    "id": "b3969262-ec81-4c76-a820-93409a5a52ea",
+    "product": "Sony WH-1000XM4",
+    "tagline": "Best in Hi-Res and Noise Cancelling",
+    "description": "Sony WH-1000XM4 offers exceptional noise cancelling, perfect for music lovers.",
+    "price": 399,
+    "category": "Headphone",
+    "url": "/headphone1.png",
+    "rating": 4.8,
+    "reviews": [
+      {
+        "username": "Saroj Kumr Dey",
+        "createdate": "2023-05-15",
+        "message": "Outstanding noise cancellation, perfect for travel."
+      },
+      {
+        "username": "Kenneth Graham",
+        "createdate": "2021-11-13",
+        "message": "Super comfortable, great for long use."
+      },
+      {
+        "username": "Christopher Peterson",
+        "createdate": "2022-01-20",
+        "message": "Amazing sound, but battery could be better."
+      }
+    ]
+  },
+  {
+    "id": "cc6b6e43-7ed9-4d46-bf71-27526e05446a",
+    "product": "Sennheiser HD 660 S",
+    "tagline": "Exceptional audiophile-grade headphones",
+    "description": "The Sennheiser HD 660 S offers audiophile-quality sound with comfortable design for long listening sessions.",
+    "price": 499,
+    "category": "Headphone",
+    "url": "/headphone2.jpg",
+    "rating": 4.9,
+    "reviews": [
+      {
+        "username": "Amanda Scott",
+        "createdate": "2021-09-18",
+        "message": "The sound is incredibly clear. Perfect for music lovers!"
+      },
+      {
+        "username": "John Adams",
+        "createdate": "2021-11-24",
+        "message": "Comfortable for hours, and the sound quality is top-notch."
+      },
+      {
+        "username": "Victoria Wilson",
+        "createdate": "2022-03-05",
+        "message": "These headphones bring out details I’ve never heard before in my music."
+      }
+    ]
+  },
+  {
+    "id": "d88a7089-cd98-4d44-8a55-5073dcf57e8d",
+    "product": "Bose QuietComfort 35 II",
+    "tagline": "Wireless, noise-cancelling perfection",
+    "description": "Bose QuietComfort 35 II combines noise cancellation, wireless connectivity, and exceptional comfort.",
+    "price": 399,
+    "category": "Headphone",
+    "url": "/headphone3.jpg",
+    "rating": 4.8,
+    "reviews": [
+      {
+        "username": "Daniel Clark",
+        "createdate": "2022-01-16",
+        "message": "Best noise-cancelling I’ve ever used. Worth every penny!"
+      },
+      {
+        "username": "Ethan Moore",
+        "createdate": "2021-12-03",
+        "message": "Super comfortable and long-lasting battery."
+      },
+      {
+        "username": "Natalie Parker",
+        "createdate": "2022-05-14",
+        "message": "Great for flights, blocks out all the noise."
+      }
+    ]
+  },
+  {
+    "id": "26e19129-0c76-4cb7-9265-0e6fef57cb38",
+    "product": "Corsair Virtuoso RGB Wireless",
+    "tagline": "High-fidelity wireless gaming headset",
+    "description": "The Corsair Virtuoso RGB Wireless provides high-quality sound, a comfortable fit, and a premium design for gamers.",
+    "price": 499,
+    "category": "Headphone",
+    "url": "/headphone4.jpg",
+    "rating": 4.6,
+    "reviews": [
+      {
+        "username": "William Turner",
+        "createdate": "2022-01-03",
+        "message": "Great sound and comfort for gaming sessions."
+      },
+      {
+        "username": "Emma Thompson",
+        "createdate": "2022-03-22",
+        "message": "The wireless range is amazing, and the battery lasts long."
+      },
+      {
+        "username": "Sophia Green",
+        "createdate": "2021-09-18",
+        "message": "The RGB lights add a nice touch to my setup."
+      }
+    ]
+  },
+  {
+    "id": "e111d684-f831-45b9-ba37-6d766a80b564",
+    "product": "SteelSeries Rival 600",
+    "tagline": "Precision and comfort for gamers",
+    "description": "The SteelSeries Rival 600 provides precise tracking and comfort for long gaming sessions.",
+    "price": 499,
+    "category": "Mouse",
+    "url": "/mouse1.jpg",
+    "rating": 4.5,
+    "reviews": [
+      {
+        "username": "Stephanie Shea",
+        "createdate": "2022-03-14",
+        "message": "Super responsive for competitive gaming."
+      },
+      {
+        "username": "Rebecca Allen",
+        "createdate": "2021-11-30",
+        "message": "Great comfort even during long sessions."
+      },
+      {
+        "username": "Mark Johnson",
+        "createdate": "2022-02-25",
+        "message": "Precise tracking, but wish it was wireless."
+      }
+    ]
+  },
+  {
+    "id": "a712345b-8465-42c9-bf5b-1730ea67a432",
+    "product": "Logitech MX Master 3",
+    "tagline": "Advanced wireless mouse with precision and comfort",
+    "description": "The Logitech MX Master 3 offers precise tracking and ergonomic comfort.",
+    "price": 999,
+    "category": "Mouse",
+    "url": "/mouse2.jpg",
+    "rating": 4.9,
+    "reviews": [
+      {
+        "username": "Kelly Green",
+        "createdate": "2021-10-12",
+        "message": "Ergonomics are top-notch. No hand fatigue!"
+      },
+      {
+        "username": "Michael Johnson",
+        "createdate": "2020-12-19",
+        "message": "Superb scrolling, perfect for productivity."
+      },
+      {
+        "username": "Susan Black",
+        "createdate": "2021-03-10",
+        "message": "Great battery life and fast charging."
+      }
+    ]
+  },
+  {
+    "id": "6344f4e1-f5c9-45b0-8b71-1e41e4ac46a7",
+    "product": "Alienware AW610M",
+    "tagline": "Ultimate precision and control for gaming",
+    "description": "The Alienware AW610M is a high-performance gaming mouse with precision tracking and customizable features.",
+    "price": 699,
+    "category": "Mouse",
+    "url": "/mouse3.jpg",
+    "rating": 4.7,
+    "reviews": [
+      {
+        "username": "Oliver Davis",
+        "createdate": "2021-10-08",
+        "message": "Feels great in hand, and the tracking is super smooth."
+      },
+      {
+        "username": "Sophia Hernandez",
+        "createdate": "2022-02-25",
+        "message": "Really responsive, and the RGB lighting is a nice touch."
+      },
+      {
+        "username": "Isabella White",
+        "createdate": "2021-12-19",
+        "message": "Perfect for fast-paced gaming."
+      }
+    ]
+  },
+  {
+    "id": "d645ec0d-cc66-4f88-b13c-6486204464cb",
+    "product": "Logitech G502 Hero",
+    "tagline": "Highly customizable gaming mouse",
+    "description": "The Logitech G502 Hero offers adjustable weights, programmable buttons, and high precision for gamers.",
+    "price": 699,
+    "category": "Mouse",
+    "url": "/mouse4.jpg",
+    "rating": 4.8,
+    "reviews": [
+      {
+        "username": "David Perez",
+        "createdate": "2021-11-10",
+        "message": "Love the customizable weight system, fits my preferences perfectly."
+      },
+      {
+        "username": "Sophia Ward",
+        "createdate": "2022-01-05",
+        "message": "So many programmable buttons, super useful!"
+      },
+      {
+        "username": "James Brown",
+        "createdate": "2022-03-18",
+        "message": "Great build quality and responsive tracking."
+      }
+    ]
+  },
+  {
+    "id": "5cd48b61-5943-4fbb-8d26-6341a69b5948",
+    "product": "Corsair K95 RGB Platinum",
+    "tagline": "Premium mechanical keyboard for gamers",
+    "description": "Corsair K95 RGB Platinum provides precision, durability, and flashy RGB lighting for gaming enthusiasts.",
+    "price": 699,
+    "category": "Keyboard",
+    "url": "/keyboard1.jpg",
+    "rating": 4.7,
+    "reviews": [
+      {
+        "username": "Anthony Griffin",
+        "createdate": "2022-01-12",
+        "message": "Solid build and amazing lighting effects."
+      },
+      {
+        "username": "Victoria Peterson",
+        "createdate": "2021-10-22",
+        "message": "Great mechanical feel and durability."
+      },
+      {
+        "username": "Richard Hall",
+        "createdate": "2022-02-16",
+        "message": "The best keyboard I’ve ever used for gaming."
+      }
+    ]
+  },
+  {
+    "id": "a7645e01-4f21-44e4-bf65-01210b6e0f17",
+    "product": "Razer Huntsman Elite",
+    "tagline": "Fast optical switches for competitive gaming",
+    "description": "Razer Huntsman Elite features fast optical switches and customizable RGB lighting.",
+    "price": 599,
+    "category": "Keyboard",
+    "url": "/keyboard2.jpg",
+    "rating": 4.6,
+    "reviews": [
+      {
+        "username": "Liam Martinez",
+        "createdate": "2022-03-11",
+        "message": "Super fast and responsive for gaming."
+      },
+      {
+        "username": "Sophia Wilson",
+        "createdate": "2021-09-05",
+        "message": "The RGB lighting looks stunning, and the keys feel amazing."
+      },
+      {
+        "username": "Lucas Adams",
+        "createdate": "2022-05-15",
+        "message": "Best keyboard for competitive play."
+      }
+    ]
+  },
+  {
+    "id": "f94f5b66-7a12-4c94-b3c1-2b748982f254",
+    "product": "SteelSeries Apex Pro",
+    "tagline": "World's fastest mechanical keyboard",
+    "description": "The SteelSeries Apex Pro features adjustable mechanical switches, allowing for customized key sensitivity for each key.",
+    "price": 799,
+    "category": "Keyboard",
+    "url": "/keyboard3.jpg",
+    "rating": 4.8,
+    "reviews": [
+      {
+        "username": "Ethan Cooper",
+        "createdate": "2022-02-14",
+        "message": "Adjustable keys are a game-changer, perfect for both typing and gaming."
+      },
+      {
+        "username": "Mia Scott",
+        "createdate": "2021-11-20",
+        "message": "The response time is incredible, definitely a top-tier keyboard."
+      },
+      {
+        "username": "Oliver Mitchell",
+        "createdate": "2022-03-22",
+        "message": "Love the customizable settings and the RGB lighting."
+      }
+    ]
+  },
+  {
+    "id": "cf17a8e5-df80-4fa8-a7bb-ef172d5d23ea",
+    "product": "Logitech G Pro X",
+    "tagline": "Pro-level mechanical gaming keyboard",
+    "description": "Logitech G Pro X offers swappable mechanical switches and advanced features tailored for eSports professionals.",
+    "price": 599,
+    "category": "Keyboard",
+    "url": "/keyboard4.jpg",
+    "rating": 4.7,
+    "reviews": [
+      {
+        "username": "David Williams",
+        "createdate": "2022-05-10",
+        "message": "The build quality is fantastic and the swappable switches are a great addition."
+      },
+      {
+        "username": "Emma Walker",
+        "createdate": "2022-01-23",
+        "message": "Compact, responsive, and perfect for gaming."
+      },
+      {
+        "username": "Noah Young",
+        "createdate": "2021-09-18",
+        "message": "The best mechanical keyboard I’ve used so far."
+      }
+    ]
+  },
+  {
+    "id": "293564bb-21e8-4e95-b5b8-9651d12e78fb",
+    "product": "Dell XPS 15",
+    "tagline": "Premium laptop for power users",
+    "description": "Dell XPS 15 offers exceptional performance, a stunning display, and a sleek design for power users.",
+    "price": 1499,
+    "category": "Laptop",
+    "url": "/laptop1.jpg",
+    "rating": 4.9,
+    "reviews": [
+      {
+        "username": "Noah Garcia",
+        "createdate": "2021-10-16",
+        "message": "The best laptop I’ve ever owned. The display is amazing!"
+      },
+      {
+        "username": "Mia Rodriguez",
+        "createdate": "2021-11-25",
+        "message": "Powerful and beautiful, worth the investment."
+      },
+      {
+        "username": "Liam Lee",
+        "createdate": "2022-01-19",
+        "message": "Perfect for content creation and daily use."
+      }
+    ]
+  },
+  {
+    "id": "f94f5b66-7a12-4c94-b3c1-2b748982f254",
+    "product": "SteelSeries Apex Pro",
+    "tagline": "World's fastest mechanical keyboard",
+    "description": "The SteelSeries Apex Pro features adjustable mechanical switches, allowing for customized key sensitivity for each key.",
+    "price": 799,
+    "category": "Keyboard",
+    "url": "/keyboard3.jpg",
+    "rating": 4.8,
+    "reviews": [
+      {
+        "username": "Ethan Cooper",
+        "createdate": "2022-02-14",
+        "message": "Adjustable keys are a game-changer, perfect for both typing and gaming."
+      },
+      {
+        "username": "Mia Scott",
+        "createdate": "2021-11-20",
+        "message": "The response time is incredible, definitely a top-tier keyboard."
+      },
+      {
+        "username": "Oliver Mitchell",
+        "createdate": "2022-03-22",
+        "message": "Love the customizable settings and the RGB lighting."
+      }
+    ]
+  },
+  {
+    "id": "cf17a8e5-df80-4fa8-a7bb-ef172d5d23ea",
+    "product": "Logitech G Pro X",
+    "tagline": "Pro-level mechanical gaming keyboard",
+    "description": "Logitech G Pro X offers swappable mechanical switches and advanced features tailored for eSports professionals.",
+    "price": 599,
+    "category": "Keyboard",
+    "url": "/keyboard4.jpg",
+    "rating": 4.7,
+    "reviews": [
+      {
+        "username": "David Williams",
+        "createdate": "2022-05-10",
+        "message": "The build quality is fantastic and the swappable switches are a great addition."
+      },
+      {
+        "username": "Emma Walker",
+        "createdate": "2022-01-23",
+        "message": "Compact, responsive, and perfect for gaming."
+      },
+      {
+        "username": "Noah Young",
+        "createdate": "2021-09-18",
+        "message": "The best mechanical keyboard I’ve used so far."
+      }
+    ]
+  }
+]

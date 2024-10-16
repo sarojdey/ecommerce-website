@@ -9,7 +9,7 @@ export default function Home() {
       <Navbar />
       <Banner />
       <StoreFeatures />
-      {/* <BestSellerProducts /> */}
+      <BestSellerProducts />
     </div>
   );
 }
