@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div className="w-full min-h-96 bg-gradient-to-r from-blue-400 to-blue-900 flex items-center justify-center p-5">
+    <div className="w-full min-h-[25rem] bg-gradient-to-r from-blue-400 to-blue-900 flex items-center justify-center p-5">
       <div className="max-w-4xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between space-x-8 h-full">
         <div className="text-white max-w-lg p-5">
           <h2 className="text-sm uppercase mb-2 tracking-widest text-gray-200">
@@ -24,7 +24,7 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="max-w-lg sm:w-full h-80 flex items-center justify-center overflow-hidden">
+        <div className="max-w-lg sm:w-full h-96 md:h-80 flex items-center justify-center overflow-hidden">
           <img
             src="/headphone.png"
             alt="Sony Headphones"
