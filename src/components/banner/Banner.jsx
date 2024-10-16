@@ -2,17 +2,17 @@ const Banner = () => {
   return (
     <div className="w-full min-h-[25rem] bg-gradient-to-r from-blue-400 to-blue-900 flex items-center justify-center p-5">
       <div className="max-w-4xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between space-x-8 h-full">
-        <div className="text-white max-w-lg p-5">
+        <div className="text-white max-w-lg p-2">
           <div className="flex justify-center items-center">
             <div>
               <h2 className="text-sm uppercase mb-2 tracking-widest text-gray-200">
                 SONY WH-1001XM
               </h2>
-              <h1 className="text-3xl font-bold mb-4">
+              <h1 className="text-2xl  md:text-3xl font-bold mb-4">
                 Best in Hi-Res and Noise Cancelling
               </h1>
             </div>
-            <div className=" md:hidden flex  w-full h-56 md:h-80  items-center justify-center overflow-hidden">
+            <div className=" md:hidden flex w-full h-56  items-center justify-center overflow-hidden">
               <img
                 src="/headphone.png"
                 alt="Sony Headphones"
@@ -35,7 +35,7 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className=" md:flex max-w-lg sm:w-full h-96 md:h-80 hidden items-center justify-center overflow-hidden">
+        <div className=" md:flex w-full h-80 hidden items-center justify-center overflow-hidden">
           <img
             src="/headphone.png"
             alt="Sony Headphones"
