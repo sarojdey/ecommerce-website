@@ -25,7 +25,7 @@ export default function NavMenu({
       </div>
 
       <div
-        className={`absolute flex  right-5 sm:right-36 md:hidden gap-4 -bottom-14 transform transition-transform duration-500 ease-out ${
+        className={`absolute z-10 flex  right-5 sm:right-36 md:hidden gap-4 -bottom-14 transform transition-transform duration-500 ease-out ${
           isSearchOpen ? "translate-x-[0%]" : "translate-x-[200%]"
         }`}
       >
