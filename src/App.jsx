@@ -12,6 +12,7 @@ import Profile from "./pages/Profile";
 import SearchResult from "./pages/SearchResult";
 import WishList from "./pages/WishList";
 import RootLayout from "./Layouts/RootLayout";
+import PageNotFound from "./pages/PageNotFound";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,12 +28,17 @@ const router = createBrowserRouter(
         ></Route>
         <Route path="/wishlist" element={<WishList />}></Route>
       </Route>
+      <Route path="*" element={<PageNotFound />}></Route>
     </Route>
   )
 );
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <div className="overflow-hidden">
+      <RouterProvider router={router} />
+    </div>
+  );
 }
 
 export default App;

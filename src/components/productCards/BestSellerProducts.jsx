@@ -4,7 +4,7 @@ import Cards from "./Cards";
 export default function BestSellerProducts() {
   return (
     <div className="  sm:px-4 py-4 sm:py-8 bg-slate-100">
-      <h2 className="text-3xl mt-7 font-bold text-center mb-2">
+      <h2 className="text-3xl mt-20 font-bold text-center mb-2">
         Best Seller Products
       </h2>
       <p className="text-center text-gray-500 mb-8">
