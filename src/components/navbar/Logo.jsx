@@ -1,6 +1,11 @@
-import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function Logo() {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   const navigate = useNavigate();
   return (
     <button

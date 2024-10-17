@@ -1,6 +1,7 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import CustomDropdown from "./CustomDropdown";
 import { FiSearch } from "react-icons/fi";
+import { useEffect } from "react";
 
 export default function SearchBar({
   id,
@@ -12,6 +13,10 @@ export default function SearchBar({
   searchQuery,
   setSearchQuery,
 }) {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   const navigate = useNavigate();
 
   return (
@@ -35,14 +40,16 @@ export default function SearchBar({
       />
       <button
         onClick={() => {
+          if (searchQuery) {
+            navigate(
+              `/search/${selectedOption.replace(/\s+/g, "")}/${searchQuery}`
+            );
+          }
           setIsSearchOpen(false);
           setSearchQuery("");
           setIsDropDownOpen(false);
           setSelectedOption("All Categories");
           setSearchQuery("");
-          navigate(
-            `/search/${selectedOption.replace(/\s+/g, "")}/${searchQuery}`
-          );
         }}
         className="bg-black h-full rounded-r-md text-white px-4 py-2"
       >

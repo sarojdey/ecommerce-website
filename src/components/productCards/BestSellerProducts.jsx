@@ -1,7 +1,9 @@
-import data from "../../data/data.json";
 import Cards from "./Cards";
-
+import getTopRatedProducts from "../../utils/getTopRatedProducts";
+import { useData } from "../../contexts/DataContext";
 export default function BestSellerProducts() {
+  const { items } = useData();
+  const data = getTopRatedProducts(items);
   return (
     <div className="  sm:px-4 py-4 sm:py-8 bg-slate-100">
       <h2 className="text-3xl mt-20 font-bold text-center mb-2">
@@ -12,7 +14,7 @@ export default function BestSellerProducts() {
       </p>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 p-5 gap-2 sm:gap-6 sm:pl-8 md:pl-10 lg:pl-14 ">
-        {data.map((item) => (
+        {data?.map((item) => (
           <Cards key={item.id} item={item} />
         ))}
       </div>

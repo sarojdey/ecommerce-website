@@ -7,7 +7,7 @@ export default function Cart() {
 
   return (
     <div>
-      {cart && cart.length > 0 ? ( // Ensure cart exists and has items
+      {cart && cart.length > 0 ? (
         <div className="w-full bg-slate-100 min-h-screen p-10">
           {cart.map((cartData, i) => (
             <CartSectionCard

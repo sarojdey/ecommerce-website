@@ -3,12 +3,10 @@ import Cards from "./Cards";
 import Empty from "../empty/Empty";
 
 export default function SearchedItems({ data, keyword }) {
-  console.log(data);
-
   return (
     <div>
       {data.length > 0 ? (
-        <div className="sm:px-4 py-4 sm:py-8 bg-slate-100">
+        <div className="sm:px-4 py-4 sm:py-8 min-h-screen bg-slate-100">
           <h2 className="text-3xl mt-7 font-bold text-center mb-10">
             Search Results for &quot;{keyword}&quot;
           </h2>

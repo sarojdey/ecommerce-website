@@ -1,7 +1,9 @@
 import { FiShoppingCart, FiHeart, FiUser, FiSearch } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
 import SearchBar from "./SearchBar";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useData } from "../../contexts/DataContext";
 
 export default function NavMenu({
   setIsSearchOpen,
@@ -13,6 +15,11 @@ export default function NavMenu({
   searchQuery,
   setSearchQuery,
 }) {
+  const { cart, wishlist } = useData();
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   const navigate = useNavigate();
 
   const loggedIn = true;
@@ -62,12 +69,14 @@ export default function NavMenu({
         className="relative cursor-pointer  "
       >
         <FiShoppingCart className="text-2xl text-gray-700" />
-        <span
-          style={{ fontSize: "9px" }}
-          className="absolute top-3 left-4 bg-red-600 text-white rounded-full px-1"
-        >
-          21
-        </span>
+        {cart.length > 0 && (
+          <span
+            style={{ fontSize: "9px" }}
+            className="absolute top-3 left-4 bg-red-600 text-white rounded-full px-1"
+          >
+            {cart.length}
+          </span>
+        )}
       </div>
       <div
         onClick={() => {
@@ -76,12 +85,14 @@ export default function NavMenu({
         className="relative cursor-pointer "
       >
         <FiHeart className="text-2xl text-gray-700" />
-        <span
-          style={{ fontSize: "9px" }}
-          className="absolute top-3 left-3 bg-red-600 text-white rounded-full px-1"
-        >
-          50
-        </span>
+        {wishlist.length > 0 && (
+          <span
+            style={{ fontSize: "9px" }}
+            className="absolute top-3 left-3 bg-red-600 text-white rounded-full px-1"
+          >
+            {wishlist.length}
+          </span>
+        )}
       </div>
 
       <div

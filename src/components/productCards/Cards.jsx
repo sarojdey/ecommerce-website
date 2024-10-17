@@ -3,7 +3,7 @@ import { useData } from "../../contexts/DataContext";
 import { useNavigate } from "react-router-dom";
 
 export default function Cards({ item }) {
-  const { addToCart } = useData();
+  const { addToCart, addToWishlist } = useData();
   const navigate = useNavigate();
   return (
     <div
@@ -56,7 +56,12 @@ export default function Cards({ item }) {
           >
             Add to Cart
           </button>
-          <button className="w-full border border-gray-300 py-2 rounded text-sm">
+          <button
+            onClick={() => {
+              addToWishlist(item);
+            }}
+            className="w-full border border-gray-300 py-2 rounded text-sm"
+          >
             Add to Wishlist
           </button>
         </div>
