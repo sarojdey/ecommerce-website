@@ -1,6 +1,7 @@
 import { FiShoppingCart, FiHeart, FiUser, FiSearch } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
 import SearchBar from "./SearchBar";
+import { useNavigate } from "react-router-dom";
 
 export default function NavMenu({
   setIsSearchOpen,
@@ -12,6 +13,8 @@ export default function NavMenu({
   searchQuery,
   setSearchQuery,
 }) {
+  const navigate = useNavigate();
+
   const loggedIn = true;
   return (
     <div className="flex items-center space-x-6">
@@ -52,7 +55,12 @@ export default function NavMenu({
         </div>
       </div>
 
-      <div className="relative cursor-pointer  ">
+      <div
+        onClick={() => {
+          navigate("/cart");
+        }}
+        className="relative cursor-pointer  "
+      >
         <FiShoppingCart className="text-2xl text-gray-700" />
         <span
           style={{ fontSize: "9px" }}
@@ -61,7 +69,12 @@ export default function NavMenu({
           21
         </span>
       </div>
-      <div className="relative cursor-pointer ">
+      <div
+        onClick={() => {
+          navigate("/wishlist");
+        }}
+        className="relative cursor-pointer "
+      >
         <FiHeart className="text-2xl text-gray-700" />
         <span
           style={{ fontSize: "9px" }}

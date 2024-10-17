@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import CustomDropdown from "./CustomDropdown";
 import { FiSearch } from "react-icons/fi";
 
@@ -11,6 +12,8 @@ export default function SearchBar({
   searchQuery,
   setSearchQuery,
 }) {
+  const navigate = useNavigate();
+
   return (
     <div className="ml-6 flex h-10 items-center text-sm shadow-sm">
       <input
@@ -37,6 +40,9 @@ export default function SearchBar({
           setIsDropDownOpen(false);
           setSelectedOption("All Categories");
           setSearchQuery("");
+          navigate(
+            `/search/${selectedOption.replace(/\s+/g, "")}/${searchQuery}`
+          );
         }}
         className="bg-black h-full rounded-r-md text-white px-4 py-2"
       >
