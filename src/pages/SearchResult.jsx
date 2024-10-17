@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import SearchedProducts from "../components/productCards/searchedProducts";
+import SearchedProducts from "../components/productCards/SearchedProducts";
 import filterProductsByCategory from "../utils/filterProductsByCategory";
 import data from "../data/data.json";
 import { useMemo } from "react";
