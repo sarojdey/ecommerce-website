@@ -33,7 +33,7 @@
     "description": "The Sennheiser HD 660 S offers audiophile-quality sound with comfortable design for long listening sessions.",
     "price": 499,
     "category": "Headphone",
-    "url": "/headphone2.jpg",
+    "url": "/headphone2.png",
     "rating": 2.9,
     "reviews": [
       {
@@ -60,7 +60,7 @@
     "description": "Bose QuietComfort 35 II combines noise cancellation, wireless connectivity, and exceptional comfort.",
     "price": 399,
     "category": "Headphone",
-    "url": "/headphone3.jpg",
+    "url": "/headphone3.png",
     "rating": 1.8,
     "reviews": [
       {
@@ -87,7 +87,7 @@
     "description": "The Corsair Virtuoso RGB Wireless provides high-quality sound, a comfortable fit, and a premium design for gamers.",
     "price": 499,
     "category": "Headphone",
-    "url": "/headphone4.jpg",
+    "url": "/headphone4.png",
     "rating": 3.6,
     "reviews": [
       {
@@ -114,7 +114,7 @@
     "description": "The SteelSeries Rival 600 provides precise tracking and comfort for long gaming sessions.",
     "price": 499,
     "category": "Mouse",
-    "url": "/mouse1.jpg",
+    "url": "/mouse1.png",
     "rating": 4.5,
     "reviews": [
       {
@@ -141,7 +141,7 @@
     "description": "The Logitech MX Master 3 offers precise tracking and ergonomic comfort.",
     "price": 999,
     "category": "Mouse",
-    "url": "/mouse2.jpg",
+    "url": "/mouse2.png",
     "rating": 4.9,
     "reviews": [
       {
@@ -168,7 +168,7 @@
     "description": "The Alienware AW610M is a high-performance gaming mouse with precision tracking and customizable features.",
     "price": 699,
     "category": "Mouse",
-    "url": "/mouse3.jpg",
+    "url": "/mouse3.png",
     "rating": 4.7,
     "reviews": [
       {
@@ -195,7 +195,7 @@
     "description": "The Logitech G502 Hero offers adjustable weights, programmable buttons, and high precision for gamers.",
     "price": 699,
     "category": "Mouse",
-    "url": "/mouse4.jpg",
+    "url": "/mouse4.png",
     "rating": 4.8,
     "reviews": [
       {
@@ -222,7 +222,7 @@
     "description": "Corsair K95 RGB Platinum provides precision, durability, and flashy RGB lighting for gaming enthusiasts.",
     "price": 699,
     "category": "Keyboard",
-    "url": "/keyboard1.jpg",
+    "url": "/keyboard1.png",
     "rating": 4.7,
     "reviews": [
       {
@@ -249,7 +249,7 @@
     "description": "Razer Huntsman Elite features fast optical switches and customizable RGB lighting.",
     "price": 599,
     "category": "Keyboard",
-    "url": "/keyboard2.jpg",
+    "url": "/keyboard2.png",
     "rating": 4.6,
     "reviews": [
       {
@@ -276,7 +276,7 @@
     "description": "The SteelSeries Apex Pro features adjustable mechanical switches, allowing for customized key sensitivity for each key.",
     "price": 799,
     "category": "Keyboard",
-    "url": "/keyboard3.jpg",
+    "url": "/keyboard3.png",
     "rating": 4.8,
     "reviews": [
       {
@@ -303,7 +303,7 @@
     "description": "Logitech G Pro X offers swappable mechanical switches and advanced features tailored for eSports professionals.",
     "price": 599,
     "category": "Keyboard",
-    "url": "/keyboard4.jpg",
+    "url": "/keyboard4.png",
     "rating": 4.7,
     "reviews": [
       {
@@ -330,7 +330,7 @@
     "description": "Dell XPS 15 offers exceptional performance, a stunning display, and a sleek design for power users.",
     "price": 1499,
     "category": "Laptop",
-    "url": "/laptop1.jpg",
+    "url": "/laptop1.png",
     "rating": 4.9,
     "reviews": [
       {
@@ -351,56 +351,83 @@
     ]
   },
   {
-    "id": "f94f5b66-7a12-4c94-b3c1-2b748982f254",
-    "product": "SteelSeries Apex Pro",
-    "tagline": "World's fastest mechanical keyboard",
-    "description": "The SteelSeries Apex Pro features adjustable mechanical switches, allowing for customized key sensitivity for each key.",
-    "price": 799,
-    "category": "Keyboard",
-    "url": "/keyboard3.jpg",
-    "rating": 4.8,
+    "id": "bb85c429-3e88-482d-8b2d-cabf78c35d9b",
+    "product": "MacBook Pro 16-inch",
+    "tagline": "Ultimate performance in a portable design",
+    "description": "The MacBook Pro 16-inch offers a stunning Retina display, exceptional performance, and the powerful M1 Pro chip.",
+    "price": 2499,
+    "category": "Laptop",
+    "url": "/laptop2.png",
+    "rating": 4.9,
     "reviews": [
       {
-        "username": "Ethan Cooper",
-        "createdate": "2022-02-14",
-        "message": "Adjustable keys are a game-changer, perfect for both typing and gaming."
+        "username": "Sophia Turner",
+        "createdate": "2022-02-10",
+        "message": "The performance is unmatched, and the battery lasts all day!"
       },
       {
-        "username": "Mia Scott",
-        "createdate": "2021-11-20",
-        "message": "The response time is incredible, definitely a top-tier keyboard."
+        "username": "Olivia Edwards",
+        "createdate": "2021-11-05",
+        "message": "Perfect for creative professionals, especially with the beautiful display."
       },
       {
-        "username": "Oliver Mitchell",
-        "createdate": "2022-03-22",
-        "message": "Love the customizable settings and the RGB lighting."
+        "username": "James Carter",
+        "createdate": "2022-01-21",
+        "message": "It’s expensive but definitely worth it for power users."
       }
     ]
   },
   {
-    "id": "cf17a8e5-df80-4fa8-a7bb-ef172d5d23ea",
-    "product": "Logitech G Pro X",
-    "tagline": "Pro-level mechanical gaming keyboard",
-    "description": "Logitech G Pro X offers swappable mechanical switches and advanced features tailored for eSports professionals.",
-    "price": 599,
-    "category": "Keyboard",
-    "url": "/keyboard4.jpg",
+    "id": "cabac88d-2c46-4b43-bc1b-8106495d9eb5",
+    "product": "HP Spectre x360",
+    "tagline": "2-in-1 convertible with stunning design",
+    "description": "HP Spectre x360 combines a sleek design, strong performance, and versatility with its 2-in-1 convertible form factor.",
+    "price": 1599,
+    "category": "Laptop",
+    "url": "/laptop3.png",
+    "rating": 4.8,
+    "reviews": [
+      {
+        "username": "William White",
+        "createdate": "2022-03-07",
+        "message": "The 2-in-1 design is perfect for work and play."
+      },
+      {
+        "username": "Ella Bennett",
+        "createdate": "2021-12-22",
+        "message": "The build quality is amazing, and it runs very smoothly."
+      },
+      {
+        "username": "Noah Evans",
+        "createdate": "2022-04-19",
+        "message": "Battery life is fantastic, and the touchscreen is responsive."
+      }
+    ]
+  },
+  {
+    "id": "af5e43f0-9d77-4eb3-9bb4-71c7f98bc52d",
+    "product": "Asus ROG Zephyrus G14",
+    "tagline": "Gaming power in a portable form",
+    "description": "The Asus ROG Zephyrus G14 offers high performance in a compact design, perfect for gamers on the go.",
+    "price": 1999,
+    "category": "Laptop",
+    "url": "/laptop4.png",
     "rating": 4.7,
     "reviews": [
       {
-        "username": "David Williams",
-        "createdate": "2022-05-10",
-        "message": "The build quality is fantastic and the swappable switches are a great addition."
+        "username": "Benjamin Parker",
+        "createdate": "2022-04-02",
+        "message": "Amazing power in such a small form factor."
       },
       {
-        "username": "Emma Walker",
-        "createdate": "2022-01-23",
-        "message": "Compact, responsive, and perfect for gaming."
+        "username": "Emily Brooks",
+        "createdate": "2021-11-18",
+        "message": "Great for gaming, and the portability is unbeatable."
       },
       {
-        "username": "Noah Young",
-        "createdate": "2021-09-18",
-        "message": "The best mechanical keyboard I’ve used so far."
+        "username": "Matthew Russell",
+        "createdate": "2022-02-27",
+        "message": "Love the design and the performance is top-tier for gaming."
       }
     ]
   }

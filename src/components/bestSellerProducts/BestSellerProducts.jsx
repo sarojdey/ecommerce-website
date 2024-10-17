@@ -17,12 +17,12 @@ export default function BestSellerProducts() {
             key={item.id}
             className="border bg-white rounded-md p-3 sm:p-4 shadow-sm sm:w-48 md:w-44 lg:w-56 mb-5"
           >
-            <div className=" flex justify-center items-center">
-              <div>
+            <div className=" flex  h-48 justify-center items-center">
+              <div className="w-full">
                 <img
-                  src="/headphone1.png"
+                  src={item.url}
                   alt={item.product}
-                  className="w-full h-full object-contain rounded"
+                  className="w-full h-full object-cover rounded"
                 />
               </div>
             </div>
