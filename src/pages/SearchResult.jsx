@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
-import SearchedProducts from "../components/productCards/SearchedProducts";
 import filterProductsByCategory from "../utils/filterProductsByCategory";
 import data from "../data/data.json";
 import { useMemo } from "react";
+import SearchedItems from "../components/productCards/SearchedItems";
 
 export default function SearchResult() {
   const { categories, keyword } = useParams();
@@ -17,5 +17,9 @@ export default function SearchResult() {
 
   console.log(filterData);
 
-  return <SearchedProducts keyword={keyword} data={filterData} />;
+  return (
+    <>
+      <SearchedItems keyword={keyword} data={filterData} />
+    </>
+  );
 }

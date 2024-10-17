@@ -1,6 +1,6 @@
 import Cards from "./Cards";
 
-export default function SearchedProducts({ keyword, data }) {
+export default function SearchedItems({ data, keyword }) {
   return (
     <div>
       {data ? (
