@@ -1,11 +1,13 @@
 import { IoTrashSharp } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
+import { useData } from "../../contexts/DataContext";
 export default function WishlistSectionCard({
   wishlistData,
   removeFromWishlist,
   index,
   addToCart,
 }) {
+  const { showCartAdded } = useData();
   const navigate = useNavigate();
   return (
     <div className=" relative md:w-full lg:w-2/3 mx-auto min-h-72 mb-10  bg-white border border-gray-200 rounded-md shadow-sm flex flex-col sm:flex-row justify-center p-5 sm:p-10">
@@ -61,6 +63,7 @@ export default function WishlistSectionCard({
             onClick={() => {
               addToCart(wishlistData, 1);
               removeFromWishlist(index);
+              showCartAdded();
             }}
             className="w-full bg-blue-500 text-white py-2 rounded text-sm"
           >

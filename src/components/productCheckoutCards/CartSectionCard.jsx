@@ -3,7 +3,7 @@ import { FaTruckFast } from "react-icons/fa6";
 import { useData } from "../../contexts/DataContext";
 import { useNavigate } from "react-router-dom";
 export default function CartSectionCard({ cartData, removeFromCart, index }) {
-  const { addToWishlist } = useData();
+  const { addToWishlist, showWishListAdded } = useData();
   const navigate = useNavigate();
   return (
     <div className=" relative md:w-full lg:w-2/3 mx-auto min-h-72 mb-10  bg-white border border-gray-200 rounded-md shadow-sm flex flex-col sm:flex-row justify-center p-5 sm:p-10">
@@ -76,6 +76,7 @@ export default function CartSectionCard({ cartData, removeFromCart, index }) {
           <button
             onClick={() => {
               addToWishlist(cartData);
+              showWishListAdded();
             }}
             className="w-full border border-gray-300 py-2 rounded text-sm"
           >
