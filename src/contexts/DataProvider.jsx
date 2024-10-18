@@ -7,6 +7,8 @@ export const DataProvider = ({ children }) => {
   const [wishlist, setWishlist] = useState([]);
   const [items, setItems] = useState([]);
   const [subtotal, setSubtotal] = useState(0);
+  const [addedCart, setAddedCart] = useState(false);
+  const [addedWishList, setAddedWishList] = useState(false);
 
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem("cart"));
@@ -70,6 +72,19 @@ export const DataProvider = ({ children }) => {
     setWishlist(wishlist.filter((_, idx) => idx !== index));
   };
 
+  const showCartAdded = () => {
+    setAddedCart(true);
+    setTimeout(() => {
+      setAddedCart(false);
+    }, 1000);
+  };
+  const showWishListAdded = () => {
+    setAddedWishList(true);
+    setTimeout(() => {
+      setAddedWishList(false);
+    }, 1000);
+  };
+
   return (
     <DataContext.Provider
       value={{
@@ -81,6 +96,10 @@ export const DataProvider = ({ children }) => {
         removeFromCart,
         addToWishlist,
         removeFromWishlist,
+        addedCart,
+        showCartAdded,
+        addedWishList,
+        showWishListAdded,
       }}
     >
       {children}

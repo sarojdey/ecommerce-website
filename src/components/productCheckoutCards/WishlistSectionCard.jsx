@@ -1,10 +1,12 @@
 import { IoTrashSharp } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 export default function WishlistSectionCard({
   wishlistData,
   removeFromWishlist,
   index,
   addToCart,
 }) {
+  const navigate = useNavigate();
   return (
     <div className=" relative md:w-full lg:w-2/3 mx-auto min-h-72 mb-10  bg-white border border-gray-200 rounded-md shadow-sm flex flex-col sm:flex-row justify-center p-5 sm:p-10">
       <div
@@ -15,10 +17,15 @@ export default function WishlistSectionCard({
       >
         <IoTrashSharp className="text-xl text-slate-600" />
       </div>
-      <div className=" w-full sm:w-60 h-52 ">
+      <div
+        onClick={() => {
+          navigate(`/product/${wishlistData?.id}`);
+        }}
+        className=" w-full sm:w-60 h-52 cursor-pointer"
+      >
         <img
           src={wishlistData?.url}
-          alt="Marvel T-shirt"
+          alt="image"
           className="w-full h-full object-contain rounded-md"
         />
       </div>
@@ -26,7 +33,14 @@ export default function WishlistSectionCard({
       <div className="sm:w-1/2 flex flex-col justify-between pl-4">
         <div>
           <p className="text-xs text-gray-600 mb-3">{wishlistData?.category}</p>
-          <h3 className="text-xl font-semibold">{wishlistData?.product}</h3>
+          <h3
+            onClick={() => {
+              navigate(`/product/${wishlistData?.id}`);
+            }}
+            className="text-xl font-semibold cursor-pointer"
+          >
+            {wishlistData?.product}
+          </h3>
           <p className="text-base text-gray-600">{wishlistData?.tagline}</p>
           <p className="text-xs text-gray-600 mt-3">
             {wishlistData?.description}
@@ -50,7 +64,7 @@ export default function WishlistSectionCard({
             }}
             className="w-full bg-blue-500 text-white py-2 rounded text-sm"
           >
-            Add to Cart
+            Move to Cart
           </button>
         </div>
       </div>

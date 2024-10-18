@@ -3,7 +3,8 @@ import { useData } from "../../contexts/DataContext";
 import { useNavigate } from "react-router-dom";
 
 export default function Cards({ item }) {
-  const { addToCart, addToWishlist } = useData();
+  const { addToCart, addToWishlist, showCartAdded, showWishListAdded } =
+    useData();
   const navigate = useNavigate();
   return (
     <div
@@ -51,6 +52,7 @@ export default function Cards({ item }) {
           <button
             onClick={() => {
               addToCart(item, 1);
+              showCartAdded();
             }}
             className="w-full bg-blue-500 text-white py-2 rounded text-sm"
           >
@@ -59,6 +61,7 @@ export default function Cards({ item }) {
           <button
             onClick={() => {
               addToWishlist(item);
+              showWishListAdded();
             }}
             className="w-full border border-gray-300 py-2 rounded text-sm"
           >

@@ -2,8 +2,11 @@ import SearchBar from "./SearchBar";
 import Logo from "./Logo";
 import NavMenu from "./NavMenu";
 import { useEffect, useState } from "react";
+import { useData } from "../../contexts/DataContext";
 
 const Navbar = () => {
+  const { addedCart, addedWishList } = useData();
+
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState("All Categories");
@@ -61,6 +64,20 @@ const Navbar = () => {
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
       />
+      <div
+        className={`absolute -bottom-28 transform transition-transform duration-300 ease-in rounded-md z-20 left-5 bg-green-200 border border-green-400 px-3 py-2 text-green-700 ${
+          addedCart ? "translate-x-[0%]" : "-translate-x-[200%]"
+        }`}
+      >
+        Added to Cart!!
+      </div>
+      <div
+        className={`absolute -bottom-40 transform transition-transform duration-300 ease-in rounded-md z-20 left-5 bg-green-200 border border-green-400 px-3 py-2 text-green-700 ${
+          addedWishList ? "translate-x-[0%]" : "-translate-x-[200%]"
+        }`}
+      >
+        Added to Wishlist!!
+      </div>
     </nav>
   );
 };

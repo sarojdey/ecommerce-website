@@ -1,6 +1,10 @@
 import { IoTrashSharp } from "react-icons/io5";
 import { FaTruckFast } from "react-icons/fa6";
+import { useData } from "../../contexts/DataContext";
+import { useNavigate } from "react-router-dom";
 export default function CartSectionCard({ cartData, removeFromCart, index }) {
+  const { addToWishlist } = useData();
+  const navigate = useNavigate();
   return (
     <div className=" relative md:w-full lg:w-2/3 mx-auto min-h-72 mb-10  bg-white border border-gray-200 rounded-md shadow-sm flex flex-col sm:flex-row justify-center p-5 sm:p-10">
       <div
@@ -11,10 +15,15 @@ export default function CartSectionCard({ cartData, removeFromCart, index }) {
       >
         <IoTrashSharp className="text-xl text-slate-600" />
       </div>
-      <div className=" w-full sm:w-60 h-52 ">
+      <div
+        onClick={() => {
+          navigate(`/product/${cartData?.id}`);
+        }}
+        className=" cursor-pointer w-full sm:w-60 h-52 "
+      >
         <img
           src={cartData?.url}
-          alt="Marvel T-shirt"
+          alt="image"
           className="w-full h-full object-contain rounded-md"
         />
       </div>
@@ -22,7 +31,14 @@ export default function CartSectionCard({ cartData, removeFromCart, index }) {
       <div className="sm:w-1/2 flex flex-col justify-between pl-4">
         <div>
           <p className="text-xs text-gray-600 mb-3">{cartData?.category}</p>
-          <h3 className="text-xl font-semibold">{cartData?.product}</h3>
+          <h3
+            onClick={() => {
+              navigate(`/product/${cartData?.id}`);
+            }}
+            className="text-xl font-semibold cursor-pointer"
+          >
+            {cartData?.product}
+          </h3>
           <p className="text-base text-gray-600">{cartData?.tagline}</p>
           <p className="text-xs text-gray-600 mt-3">{cartData?.description}</p>
 
@@ -55,6 +71,16 @@ export default function CartSectionCard({ cartData, removeFromCart, index }) {
           >
             ₹{cartData?.price * cartData?.quantity}
           </span>
+        </div>
+        <div className="mt-5 flex justify-between items-center">
+          <button
+            onClick={() => {
+              addToWishlist(cartData);
+            }}
+            className="w-full border border-gray-300 py-2 rounded text-sm"
+          >
+            Add to Wishlist
+          </button>
         </div>
       </div>
     </div>
