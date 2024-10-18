@@ -18,7 +18,7 @@ export default function SearchedItems({ data, keyword }) {
           </div>
         </div>
       ) : (
-        <Empty />
+        <Empty msg="No result found" />
       )}
     </div>
   );

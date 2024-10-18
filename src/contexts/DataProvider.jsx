@@ -85,6 +85,11 @@ export const DataProvider = ({ children }) => {
     }, 1000);
   };
 
+  const resetCart = () => {
+    setCart([]);
+    setSubtotal(0);
+  };
+
   return (
     <DataContext.Provider
       value={{
@@ -100,6 +105,7 @@ export const DataProvider = ({ children }) => {
         showCartAdded,
         addedWishList,
         showWishListAdded,
+        resetCart,
       }}
     >
       {children}

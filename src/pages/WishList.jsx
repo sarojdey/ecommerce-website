@@ -21,7 +21,7 @@ function WishList() {
           ))}
         </div>
       ) : (
-        <Empty />
+        <Empty msg="Wish List is Empty" />
       )}
     </div>
   );
