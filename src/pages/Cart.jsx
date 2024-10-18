@@ -17,7 +17,7 @@ export default function Cart() {
   };
 
   return orderPlaced ? (
-    <div className="w-full min-h-screen flex justify-center items-center">
+    <div className="w-full min-h-[80vh] flex justify-center items-center">
       <div className="flex flex-col justify-center items-center">
         <BsPatchCheckFill className="text-5xl text-green-600 mb-2" />
 
